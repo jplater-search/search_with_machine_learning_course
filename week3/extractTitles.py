@@ -3,6 +3,9 @@ import random
 import xml.etree.ElementTree as ET
 import argparse
 from pathlib import Path
+import string
+from nltk.stem import SnowballStemmer
+import re
 
 directory = r'/workspace/search_with_machine_learning_course/data/pruned_products'
 parser = argparse.ArgumentParser(description='Process some integers.')
@@ -26,8 +29,15 @@ if args.input:
 sample_rate = args.sample_rate
 
 def transform_training_data(name):
-    # IMPLEMENT
-    return name.replace('\n', ' ')
+    cleaned_name = re.sub('[\N{REGISTERED SIGN}\N{TRADE MARK SIGN}\N{COPYRIGHT SIGN}\n]', ' ', name)
+    cleaned_name_lower = cleaned_name.lower().translate(str.maketrans(string.punctuation, ' '*len(string.punctuation)))
+    stemmer = SnowballStemmer("english")
+
+    tokens = []
+    for token in cleaned_name_lower.split():
+        tokens.append(stemmer.stem(token))
+
+    return ' '.join(tokens)
 
 # Directory for product data
 
