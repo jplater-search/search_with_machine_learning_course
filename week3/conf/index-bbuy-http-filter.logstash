@@ -77,7 +77,7 @@ input {
       }
 
       http{
-        url => "http://localhost:5000/documents/annotate"
+        url => "http://flask-app:3000/documents/annotate"
         body => {
             "name" => "%{name}"
             "shortDescription" => "%{shortDescription}"
@@ -123,7 +123,7 @@ input {
     }
 output {
   opensearch {
-    hosts => ["https://localhost:9200"]
+    hosts => ["https://opensearch-node1:9200"]
     index => "bbuy_annotations"
     user => "admin"
     password => "admin"

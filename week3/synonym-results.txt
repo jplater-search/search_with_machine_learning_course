@@ -1,0 +1,239 @@
+Query word? monitor
+lcd 0.730113
+03e 0.72025
+s5510i 0.720228
+798bk 0.720039
+cm1730 0.71945
+9113bk 0.717133
+ub20p 0.716311
+ub32p 0.715968
+sx2803 0.715673
+dx4860 0.714742
+
+Query word? speakers
+speaker 0.943176
+speakercraft 0.88923
+speakon 0.855443
+speak 0.851958
+speakerphon 0.781064
+loudspeak 0.748454
+polypropylen 0.734843
+pair 0.726339
+woofer 0.72633
+impp 0.722831
+
+Query word? laptop
+notebook 0.703791
+ultrabook 0.670213
+lapdesk 0.667468
+helio 0.653412
+l355d 0.650521
+g4 0.648371
+qosmio 0.646984
+lifebook 0.644461
+macbook 0.641674
+briefcas 0.641334
+
+Query word? tv
+tvs 0.765571
+novia 0.702533
+panel 0.68197
+flat 0.679594
+bdi 0.669339
+whalen 0.659503
+68 0.655065
+televis 0.654019
+wega 0.651539
+altra 0.642584
+
+Query word? headphones
+headphon 0.96409
+earbud 0.886802
+yurbud 0.865974
+ear 0.84755
+bud 0.813124
+hesh 0.783861
+2xl 0.776377
+earphon 0.77164
+piiq 0.732694
+marshmallow 0.728524
+
+Query word? apple
+appleâ 0.936045
+appl 0.864689
+app 0.781397
+bookendz 0.770423
+3gs 0.755207
+candyshel 0.754201
+ipod 0.748613
+easel 0.739721
+ipad 0.720374
+amethyst 0.719894
+
+Query word? samsung
+lg 0.742743
+sanyo 0.655062
+smudg 0.591124
+hd7 0.584403
+sgh 0.578225
+googl 0.576754
+lte 0.567552
+viewson 0.562611
+galaxi 0.556895
+panason 0.556344
+
+Query word? dell
+inspiron 0.888358
+xps 0.792527
+i570 0.760145
+i580 0.759414
+798bk 0.755027
+i560 0.753283
+9113bk 0.749218
+sx8100 0.742679
+565nbk 0.740893
+x8300 0.73927
+
+Query word? lg
+samsung 0.742743
+sanyo 0.669272
+sharp 0.627779
+smooth 0.627031
+panorama 0.626925
+wildfir 0.607131
+frigidair 0.595777
+siemen 0.587195
+vior 0.583564
+maytag 0.581902
+
+Query word? sony
+sono 0.815953
+sonar 0.803565
+sonax 0.761981
+soni 0.730433
+song 0.714989
+sonata 0.710117
+edison 0.698402
+sonoma 0.683147
+lesson 0.669814
+songbook 0.664919
+
+Query word? latitude
+latitud 0.973905
+leisur 0.811
+jivo 0.780394
+sumo 0.770809
+timbuk2 0.769939
+amazon 0.766919
+a215 0.750301
+nookcolor 0.731079
+nova 0.725661
+nook 0.721693
+
+Query word? iphone
+iphon 0.857548
+phone 0.78507
+4s 0.743113
+appl 0.72375
+3gs 0.719057
+ipod 0.707822
+commut 0.686282
+fascin 0.685479
+8520 0.685258
+otterbox 0.674015
+
+Query word? playstation
+playstat 0.808453
+360 0.738207
+station 0.727939
+armageddon 0.697891
+xbox 0.68799
+psp 0.684498
+killzon 0.66198
+nyko 0.65789
+psyclon 0.654818
+ps2 0.650988
+
+Query word? xbox
+360 0.930406
+ps3 0.82488
+playstat 0.824134
+ps2 0.771079
+â 0.747787
+psp 0.739591
+unlimit 0.734199
+warfight 0.727578
+bioshock 0.727047
+wwii 0.726852
+
+Query word? lcd
+edtv 0.823935
+widescreen 0.81098
+tft 0.802182
+aoc 0.795782
+720p 0.787408
+ub20p 0.768078
+480i 0.764688
+s5510i 0.764073
+cm1730 0.757069
+vior 0.755098
+
+Query word? black
+blacktop 0.745351
+white 0.631691
+silver 0.618052
+gray 0.585206
+blackjack 0.57961
+blueberri 0.564856
+blue 0.558542
+blackston 0.546211
+raspberri 0.540172
+blackhawk 0.538003
+
+Query word? hd
+hdd 0.687321
+zx5 0.674197
+camileo 0.671409
+dxg 0.657828
+bloggi 0.656761
+hdr 0.656004
+hd7 0.654158
+cx150 0.64735
+snapp 0.646394
+cmos 0.644027
+
+Query word? red
+blue 0.650563
+violet 0.631052
+silver 0.597716
+pink 0.580605
+lime 0.568693
+w530 0.566122
+turquois 0.55959
+wx9 0.553957
+blueberri 0.550546
+l22 0.54941
+
+Query word? wireless
+11g 0.609826
+airplus 0.604948
+dsl 0.603428
+802 0.600883
+keyless 0.597805
+adsl 0.596677
+cradlepoint 0.595479
+m325 0.593098
+11b 0.592336
+wiremold 0.582703
+
+Query word? windows
+window 0.980192
+hoyl 0.678497
+mac 0.674766
+wind 0.669418
+mahjongg 0.642191
+nds 0.641747
+encyclopedia 0.641302
+decept 0.636516
+secret 0.626153
+puzzl 0.621833

@@ -41,6 +41,7 @@ services:
     container_name: flask-app
     environment:
       PRIOR_CLICKS_LOC: '/usr/src/app/local/ltr_output/train.csv'
+      SYNONYMS_MODEL_LOC: '/usr/src/app/datasets/fasttext/titles/phone_model.bin'
     ports:
       - 3000:3000
     volumes:
