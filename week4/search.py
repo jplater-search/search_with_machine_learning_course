@@ -57,7 +57,6 @@ def process_filters(filters_input):
     return filters, display_filters, applied_filters
 
 def get_query_category(user_query, query_class_model):
-    return None
     if user_query == '*':
         return None
 
