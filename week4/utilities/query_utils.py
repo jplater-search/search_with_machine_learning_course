@@ -314,3 +314,12 @@ def add_aggs(query_obj):
         }
 
     }
+
+def add_term_filter(query_obj, key, values):
+    query_obj["query"]["bool"]["filter"] = [{
+        "terms": {
+            key: values
+
+        }
+
+    }]

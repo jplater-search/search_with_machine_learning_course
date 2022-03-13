@@ -57,7 +57,21 @@ def process_filters(filters_input):
     return filters, display_filters, applied_filters
 
 def get_query_category(user_query, query_class_model):
-    print("IMPLEMENT ME: get_query_category")
+    if user_query == '*':
+        return None
+
+    categories, prob = query_class_model.predict(user_query, k=5)
+
+    rtn = []
+    sum = 0.0
+    for idx, category in enumerate(categories):
+        print("cat: {}, prob: {}".format(category, prob[idx]))
+        sum += prob[idx]
+        rtn.append(category.replace('__label__', ''))
+
+        if sum >= 0.50:
+            return rtn
+
     return None
 
 
@@ -78,6 +92,7 @@ def query():
     ltr_store_name = "week2"
     ltr_model_name = "ltr_model"
     explain = False
+
     if request.method == 'POST':  # a query has been submitted
         user_query = request.form['query']
         if not user_query:
@@ -136,12 +151,17 @@ def query():
         query_obj = qu.create_query("*", "", [], sort, sortDir, size=100)
 
     query_class_model = current_app.config["query_model"]
+    print("can you see this?")
     query_category = get_query_category(user_query, query_class_model)
     if query_category is not None:
         print("IMPLEMENT ME: add this into the filters object so that it gets applied at search time.  This should look like your `term` filter from week 1 for department but for categories instead")
+        print(query_category)
+        qu.add_term_filter(query_obj, 'categoryPathIds.keyword', query_category)
+        print(query_obj)
     #print("query obj: {}".format(query_obj))
     response = opensearch.search(body=query_obj, index=current_app.config["index_name"], explain=explain)
     # Postprocess results here if you so desire
+
 
     #print(response)
     if error is None:
@@ -153,8 +173,10 @@ def query():
 
 
 def get_click_prior(user_query):
+
     click_prior = ""
     if current_app.config.get("priors_gb"):
+
         try:
             prior_doc_ids = None
             prior_doc_id_weights = None
