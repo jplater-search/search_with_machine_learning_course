@@ -42,7 +42,6 @@ services:
     environment:
       PRIOR_CLICKS_LOC: '/usr/src/app/local/ltr_output/train.csv'
       SYNONYMS_MODEL_LOC: '/usr/src/app/datasets/fasttext/titles/phone_model.bin'
-      QUERY_CLASS_MODEL_LOC: '/usr/src/app/week4/models/100/week4_model_epoch.bin'
     ports:
       - 3000:3000
     volumes:
